@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import MainLayout from './components/MainLayout';
 import About from './pages/About';
+import Feedback from './pages/Feedback';
 import Home from './pages/Home';
 import PlatformComplaint from './pages/PlatformComplaint';
 import TrainComplaint from './pages/TrainComplaint';
@@ -19,7 +20,7 @@ function App() {
           <Route path="/chat-with-passengers" element={<div>Chat with Passengers Page</div>} />
           <Route path="/parcel-complaint" element={<div>Parcel Complaint Page</div>} />
           <Route path="/track-parcel" element={<div>Track Parcel Page</div>} />
-          <Route path="/feedbacks" element={<div>Feedbacks Page</div>} />
+          <Route path="/feedbacks" element={<Feedback />} />
         </Routes>
       </MainLayout>
     </Router>
